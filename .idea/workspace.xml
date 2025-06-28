@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3cf1639-31a4-4629-875f-34bd60d47898" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/store/templates/category_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/templates/product_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vapeshop/product_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/templates/order_success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/templates/store/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/store/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/category_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/category_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/store/templates/product_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vapeshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/vapeshop/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -58,6 +59,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\21-КІ\vapeshop\store\static" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -78,7 +84,7 @@
       <workItem from="1750924496065" duration="1875000" />
       <workItem from="1750941060537" duration="2013000" />
       <workItem from="1751100219174" duration="208000" />
-      <workItem from="1751111847224" duration="3898000" />
+      <workItem from="1751111847224" duration="5292000" />
     </task>
     <servers />
   </component>

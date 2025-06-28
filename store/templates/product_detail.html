@@ -22,3 +22,15 @@
   </div>
 </div>
 {% endblock %}
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}{{ product.name }}{% endblock %}
+
+{% block content %}
+<h2>{{ product.name }}</h2>
+<p>{{ product.description }}</p>
+<p>Ціна: {{ product.price }} грн</p>
+
+<a href="{% url 'create_order' product.id %}" class="btn btn-primary">Купити</a>
+{% endblock %}

@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True, verbose_name='Назва категорії')
     description = models.TextField(blank=True, verbose_name='Опис категорії')
@@ -7,8 +8,8 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
 class Product(models.Model):
-    # Мінімум 8 філдів, з дефолтами та field options
     name = models.CharField(max_length=200, verbose_name='Назва товару')
     description = models.TextField(blank=True, verbose_name='Опис')
     price = models.DecimalField(max_digits=8, decimal_places=2, verbose_name='Ціна')
@@ -22,3 +23,15 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Order(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    customer_name = models.CharField(max_length=100)
+    customer_phone = models.CharField(max_length=20)
+    customer_address = models.TextField()
+    quantity = models.PositiveIntegerField(default=1)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Order #{self.id} - {self.product.name}"
