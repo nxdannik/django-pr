@@ -20,3 +20,14 @@ from .models import Product
 def index(request):
     products = Product.objects.all()[:6]  # Показати перші 6 товарів
     return render(request, 'index.html', {'products': products})
+from django.shortcuts import render, get_object_or_404
+from .models import Product, Category
+
+def product_detail(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    return render(request, 'product_detail.html', {'product': product})
+
+def category_detail(request, pk):
+    category = get_object_or_404(Category, pk=pk)
+    products = category.product_set.all()
+    return render(request, 'category_detail.html', {'category': category, 'products': products})
