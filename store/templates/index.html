@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+{% extends 'base.html' %}
+
+{% block title %}Головна — VapeShop{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Популярні товари</h2>
+
+<div class="row">
+    {% for product in products %}
+    <div class="col-md-4 mb-4">
+        <div class="card h-100">
+            {% if product.image %}
+            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+            {% else %}
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="No image">
+            {% endif %}
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description|truncatechars:100 }}</p>
+                <div class="mt-auto">
+                    <p class="fw-bold">{{ product.price }} грн</p>
+                    <a href="#" class="btn btn-primary w-100 disabled">Детальніше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
